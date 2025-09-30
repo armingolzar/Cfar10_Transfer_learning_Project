@@ -43,7 +43,7 @@ This mirrors my real-world work at **Shahid Bahonar University** (medical image 
 2. Set up environment (Python 3.9 recommended):
     ```conda create -n cifar10-tf python=3.9 -y
     conda activate cifar10-tf
-    pip install -r requirements.txt
+    pip install -r requirements.txt ```
 
 3. Train the model:
     ```python -m src.train
