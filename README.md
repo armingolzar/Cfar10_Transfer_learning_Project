@@ -3,7 +3,7 @@
 > Achieved **88% test accuracy** on CIFAR-10 using transfer learning, on-GPU augmentation, and strong regularization — originally developed in **2022** as part of my deep learning training.  
 > Trained in **~2 hours** on a **laptop GPU (NVIDIA RTX 4070)** — proving efficiency and practicality.
 
-![Training Accuracy](assets/learning_curve.png)
+![Training Accuracy](./assets/larning_curve.png)
 
 ## 🎯 Why This Project?
 CIFAR-10 images are natively **32×32**, but this resolution is too small for effective transfer learning with ImageNet-pretrained models like VGG16.  
