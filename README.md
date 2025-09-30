@@ -39,28 +39,35 @@ This mirrors my real-world work at **Shahid Bahonar University** (medical image 
    ```bash
    git clone https://github.com/yourname/cifar10-transfer-learning.git
    cd cifar10-transfer-learning
+   ```
 
 2. Set up environment (Python 3.9 recommended):
-    ```conda create -n cifar10-tf python=3.9 -y
+    ```bash
+    conda create -n cifar10-tf python=3.9 -y
     conda activate cifar10-tf
-    pip install -r requirements.txt ```
+    pip install -r requirements.txt
+    ```
 
 3. Train the model:
-    ```python -m src.train
+    ```bash
+    python -m src.train
+    ```
 
 -   Training curves saved in assets/
 -   Model saved to models/cifar10_transfer_learning_model.h5
 
 ## 📁 Project Structure
+   ```bash
    src/
     ├── data_loader.py    # Loads & resizes CIFAR-10 to 64×64, normalizes, one-hot encodes
     ├── model.py          # VGG16 feature extractor + custom classification head
     └── train.py          # Training loop, evaluation, and visualization
+   ```
 
 ## 📝 Notes
-    Historical context: Developed in 2022 using TensorFlow 2.10.
-    Model availability: The trained .h5 model (~100 MB) is not committed (see .gitignore). Contact me if you'd like a copy.
-    This project reflects my approach in real work: adapting input resolution enables effective transfer learning.
+- **Historical context:** Developed in 2022 using TensorFlow 2.10.
+- **Model availability:** The trained .h5 model (~100 MB) is not committed (see .gitignore). Contact me if you'd like a copy.
+- **This project reflects my approach in real work:** adapting input resolution enables effective transfer learning.
 
 ✅ This version:
 - Contains **only CIFAR-10 content**
