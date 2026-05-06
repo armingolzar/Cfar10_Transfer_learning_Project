@@ -1,5 +1,5 @@
 import torch 
-from torchvision import dataset, transforms
+from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
 def preparing_dataset(target_size : int = 64, batch_size : int = 32, num_workers : int = 2):
@@ -9,8 +9,8 @@ def preparing_dataset(target_size : int = 64, batch_size : int = 32, num_workers
                 transforms.ToTensor(),
                 transforms.Normalize((0.5,0.5, 0.5), (0.5,0.5, 0.5))])
     
-    train_dataset = dataset.CIFAR10(root="..\\data\\", train=True, download=True, transform=transform)
-    test_dataset = dataset.CIFAR10(root="..\\data\\", train=False, download=True, transform=transform)
+    train_dataset = datasets.CIFAR10(root="..\\data\\", train=True, download=True, transform=transform)
+    test_dataset = datasets.CIFAR10(root="..\\data\\", train=False, download=True, transform=transform)
 
     train_loader = DataLoader(
                 train_dataset,
